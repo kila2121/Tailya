@@ -135,7 +135,10 @@
 .message-close-button,
 .message-expand-button,
 .notification-button,
-.message-list-clear-button {
+.message-list-clear-button,
+.modal-dialog-linked-button,
+.dialog-button,
+.modal-dialog .button {
     background-color: rgba(255, 255, 255, 0.10) !important;
     background-image: none !important;
     color: #ffffff !important;
@@ -148,15 +151,33 @@
 .message-close-button:hover,
 .message-expand-button:hover,
 .notification-button:hover,
-.message-list-clear-button:hover {
+.message-list-clear-button:hover,
+.modal-dialog-linked-button:hover,
+.dialog-button:hover,
+.modal-dialog .button:hover {
     background-color: rgba(255, 255, 255, 0.20) !important;
 }
 
 .message-close-button:active,
 .message-expand-button:active,
 .notification-button:active,
-.message-list-clear-button:active {
+.message-list-clear-button:active,
+.modal-dialog-linked-button:active,
+.dialog-button:active,
+.modal-dialog .button:active {
     background-color: rgba(255, 255, 255, 0.30) !important;
+}
+
+.modal-dialog-linked-button:default,
+.dialog-button:default,
+.modal-dialog .button:default {
+    background-color: rgb(117, 84, 209) !important;
+}
+
+.modal-dialog-linked-button:default:hover,
+.dialog-button:default:hover,
+.modal-dialog .button:default:hover {
+    background-color: rgb(135, 105, 222) !important;
 }
 
 .message-list-clear-button {
@@ -200,7 +221,8 @@
 
 .quick-toggle,
 .quick-toggle-arrow,
-.quick-settings .icon-button {
+.quick-settings .icon-button,
+.quick-toggle-menu .icon-button {
     background-color: rgba(255, 255, 255, 0.12) !important;
     background-image: none !important;
     color: #ffffff !important;
@@ -210,13 +232,15 @@
 
 .quick-toggle:hover,
 .quick-toggle-arrow:hover,
-.quick-settings .icon-button:hover {
+.quick-settings .icon-button:hover,
+.quick-toggle-menu .icon-button:hover {
     background-color: rgba(255, 255, 255, 0.22) !important;
 }
 
 .quick-toggle:active,
 .quick-toggle-arrow:active,
-.quick-settings .icon-button:active {
+.quick-settings .icon-button:active,
+.quick-toggle-menu .icon-button:active {
     background-color: rgba(255, 255, 255, 0.30) !important;
 }
 
@@ -239,6 +263,42 @@
     background-color: rgb(100, 70, 190) !important;
 }
 
+.quick-toggle-menu {
+    background-color: rgba(38, 38, 38, 0.92) !important;
+    border: none !important;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35) !important;
+}
+
+.quick-toggle-menu StLabel,
+.quick-toggle-menu StIcon {
+    color: #ffffff !important;
+}
+
+.quick-toggle-menu .header .subtitle {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.quick-toggle-menu .header .icon {
+    background-color: rgba(255, 255, 255, 0.12) !important;
+    color: #ffffff !important;
+}
+
+.modal-dialog,
+.end-session-dialog {
+    background-color: rgba(30, 30, 30, 0.92) !important;
+    border: none !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+}
+
+.modal-dialog StLabel,
+.message-dialog-title {
+    color: #ffffff !important;
+}
+
+.modal-dialog .message-dialog-description {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
 .slider {
     -barlevel-background-color: rgba(255, 255, 255, 0.18) !important;
     -barlevel-active-background-color: rgb(117, 84, 209) !important;
@@ -246,4 +306,40 @@
 
 .toggle-switch:checked {
     background-color: rgb(117, 84, 209) !important;
+}
+
+.modal-dialog StButton,
+.modal-dialog-button-box StButton {
+    background-color: rgba(255, 255, 255, 0.14) !important;
+    background-image: none !important;
+    border: none !important;
+    border-radius: 99px !important;
+    box-shadow: none !important;
+    color: #ffffff !important;
+    transition-duration: 150ms;
+}
+
+.modal-dialog StButton StLabel,
+.modal-dialog-button-box StButton StLabel {
+    color: #ffffff !important;
+}
+
+.modal-dialog StButton:hover,
+.modal-dialog-button-box StButton:hover {
+    background-color: rgba(255, 255, 255, 0.24) !important;
+}
+
+.modal-dialog StButton:active,
+.modal-dialog-button-box StButton:active {
+    background-color: rgba(255, 255, 255, 0.32) !important;
+}
+
+.modal-dialog StButton:default,
+.modal-dialog-button-box StButton:default {
+    background-color: rgb(117, 84, 209) !important;
+}
+
+.modal-dialog StButton:default:hover,
+.modal-dialog-button-box StButton:default:hover {
+    background-color: rgb(135, 105, 222) !important;
 }

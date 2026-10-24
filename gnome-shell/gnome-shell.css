@@ -73,6 +73,7 @@
 }
 
 .popup-menu-content StLabel,
+.aggregate-menu StLabel,
 .quick-settings StLabel,
 .notification-banner StLabel,
 .message StLabel,
@@ -222,7 +223,8 @@
 .quick-toggle,
 .quick-toggle-arrow,
 .quick-settings .icon-button,
-.quick-toggle-menu .icon-button {
+.quick-toggle-menu .icon-button,
+.system-menu-action {
     background-color: rgba(255, 255, 255, 0.12) !important;
     background-image: none !important;
     color: #ffffff !important;
@@ -233,14 +235,16 @@
 .quick-toggle:hover,
 .quick-toggle-arrow:hover,
 .quick-settings .icon-button:hover,
-.quick-toggle-menu .icon-button:hover {
+.quick-toggle-menu .icon-button:hover,
+.system-menu-action:hover {
     background-color: rgba(255, 255, 255, 0.22) !important;
 }
 
 .quick-toggle:active,
 .quick-toggle-arrow:active,
 .quick-settings .icon-button:active,
-.quick-toggle-menu .icon-button:active {
+.quick-toggle-menu .icon-button:active,
+.system-menu-action:active {
     background-color: rgba(255, 255, 255, 0.30) !important;
 }
 
@@ -295,7 +299,10 @@
     color: #ffffff !important;
 }
 
-.modal-dialog .message-dialog-description {
+.modal-dialog .message-dialog-subtitle,
+.modal-dialog .message-dialog-body,
+.modal-dialog .end-session-dialog-description,
+.modal-dialog .end-session-dialog-warning {
     color: rgba(255, 255, 255, 0.75) !important;
 }
 
